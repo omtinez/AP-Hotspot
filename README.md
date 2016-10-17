@@ -27,7 +27,7 @@ On **Debian and Ubuntu** run
     
 You can use the PREFIX make parameter to change the install directory
 
-    sudo make install PREFIX=/usr/bin
+    sudo make install PREFIX=/usr/sbin
     
 If you want to start AP-Hotspot at boot and you are using **Debian Wheezy** you may need to install a recent systemd version from the backports
 
