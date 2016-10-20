@@ -415,8 +415,8 @@ After=syslog.target network.target
 Type=oneshot
 RemainAfterExit=yes
 KillMode=none
-ExecStart=/bin/bash -c "sleep $startup_delay; /usr/bin/ap-hotspot start"
-ExecStop=/bin/bash -c "/usr/bin/ap-hotspot stop"
+ExecStart=/bin/bash -c "sleep $startup_delay; /usr/sbin/ap-hotspot start"
+ExecStop=/bin/bash -c "/usr/sbin/ap-hotspot stop"
 [Install]
 WantedBy=multi-user.target
 EOF
