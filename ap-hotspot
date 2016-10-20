@@ -420,7 +420,8 @@ ExecStop=/bin/bash -c "/usr/sbin/ap-hotspot stop"
 [Install]
 WantedBy=multi-user.target
 EOF
-# Create symlink
+# Create symlinks
+ln -sf "$(readlink -f "$0") /usr/sbin/ap-hotspot"
 ln -f "$systemdservice" "$systemdsymlink"
 # Register service
 systemctl daemon-reload
